@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to left, gray, rgb(242, 191, 95));
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .container {
+        width: 30%;
+        height: 35vh;
+        background: white;
+        box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+        padding: 9vh 0 0 2%;
+      }
+      .container input {
+        width: 90%;
+        height: 3.5vh;
+        padding: 0 0 0 1%;
+      }
+      #btn {
+        background: rgb(50, 95, 229);
+        height: 4vh;
+        border-radius: 5px;
+        border: none;
+      }
+      .result {
+        margin-left: 10%;
+        width: 35%;
+        height: 35vh;
+        background: white;
+        border: 1px solid slateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <label>Index</label><br />
+          <input id="ind" type="text" placeholder="Ex - 15,50,5" required />
+        </div>
+        <div>
+          <label>Value</label><br />
+          <input id="val" type="text" placeholder="Ex - 15,50,5" required />
+        </div>
+        <br />
+        <div>
+          <input id="btn" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <!-- <div class="result">
+        <h4 id="res"></h4>
+    </div> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
